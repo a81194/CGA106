@@ -2,11 +2,17 @@ package webapp.member.service;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
+import org.modelmapper.spi.MatchingStrategy;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import webapp.member.dto.LoginDTO;
 import webapp.member.dto.RegisterDTO;
 import webapp.member.pojo.Members;
 import webapp.member.repository.MemberRepository;
+
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -28,7 +34,7 @@ public class MemberServiceImpl implements MemberService{
     private RegisterDTO userRegister;
     private LoginDTO loginDTO;
 
-//    private BCryptPasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
+    private BCryptPasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
 
     @Override
     public Boolean addMember(RegisterDTO dto) {
