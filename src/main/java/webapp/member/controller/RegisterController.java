@@ -23,6 +23,7 @@ public class RegisterController {
         return memberServiceImpl.addMember(registerDTO);
     }
 
+
     @PostMapping("/login-check")
     @ResponseBody
     public Boolean memberLogin(@RequestBody LoginDTO loginDTO){
