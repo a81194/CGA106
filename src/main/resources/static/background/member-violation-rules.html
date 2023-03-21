@@ -14,6 +14,8 @@
 
 	<link href="static/css/nice-select.css" rel="stylesheet">
 	<link href="static/css/style.css" rel="stylesheet">
+	<script src="./static/js/template.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -98,7 +100,7 @@
 								<h4 class="card-title">違規規則管理</h4>
 							</div>
 							<div class="card-body">
-								<form action="#" method="POST">
+								<form id="violation-form" action="#" method="POST">
 									<div class="table-responsive">
 										<table class="table table-bordered table-responsive-sm">
 											<thead>
@@ -131,12 +133,22 @@
 													<td contenteditable="true"><span
 															class="badge badge-danger">3650</span></td>
 												</tr>
+												<tr>
+													<td colspan="3">
+														<button type="button" class="btn btn-primary"
+															style="margin-left: 92% ">
+															<i class="fa fa-plus">Add Row</i>
+														</button>
+													</td>
+												</tr>
+												<tr style="border: none">
+													<td colspan="3" style="border: none">
+														<button type="submit" class="btn btn-primary"
+															style="margin-left: 92%">Submit</button>
+													</td>
+												</tr>
 											</tbody>
 										</table>
-									</div>
-									<div>
-										<button type="submit" class="btn btn-primary"
-											style="margin-left: 93%;">Submit</button>
 									</div>
 								</form>
 							</div>
