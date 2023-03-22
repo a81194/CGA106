@@ -5,12 +5,13 @@ import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import webapp.employee.dto.EmployeeDTO;
 import webapp.employee.dto.LoginDTO;
 import webapp.employee.pojo.Employee;
 import webapp.employee.repository.EmployeeRepository;
 
-@Component
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     final ModelMapper modelMapper;
