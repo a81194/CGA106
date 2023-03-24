@@ -3,11 +3,11 @@ fetch('/foreground/header.html')
     .then(data => {
         document.getElementById('header').innerHTML = data;
     })
-fetch('/foreground/mobile.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('mobile').innerHTML = data;
-    })
+// fetch('/foreground/mobile.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('mobile').innerHTML = data;
+//     })
 fetch('/foreground/support.html')
     .then(response => response.text())
     .then(data => {
