@@ -45,7 +45,8 @@
         ***********************************-->
       <div class="nav-header">
         <a href="" class="brand-logo">
-          <svg
+          <img src="static/picture/baordgame-logo.png" alt="" style="max-width: 100%;">
+          <!-- <svg
             class="logo-abbr"
             width="57"
             height="57"
@@ -69,7 +70,7 @@
           <div class="brand-title">
             <h2 class="">inv<span>ome</span></h2>
             <span class="brand-sub-title">Invoicing Admin</span>
-          </div>
+          </div> -->
         </a>
         <div class="nav-control">
           <div class="hamburger">
@@ -332,27 +333,27 @@
       <!--**********************************
             Content body start
         ***********************************-->
-      <!--**********************************
-            商品維護 start
-        ***********************************-->
       <div class="content-body" style="min-height: 876px">
         <div class="container-fluid">
           <div class="row page-titles">
             <ol class="breadcrumb">
               <li class="breadcrumb-item active">
-                <a href="javascript:void(0)">商品資料管理</a>
+                <a href="javascript:void(0)">基本資料管理</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="javascript:void(0)">商品狀態維護</a>
+                <a href="javascript:void(0)">會員權限設定</a>
               </li>
             </ol>
           </div>
+          <!--**********************************
+            商品管理 start
+        ***********************************-->
           <!-- row -->
           <div class="row">
             <div class="col-lg-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">商品狀態管理</h4>
+                  <h4 class="card-title">會員帳號管理</h4>
                 </div>
                 <div class="card-body">
                   <div class="form-validation">
@@ -360,70 +361,53 @@
                     <form class="needs-validation" novalidate="">
                       <div class="row">
                         <div class="col-xl-6">
-                          <!-- PRODUCT -->
-                          <div class="mb-3 row" hidden>
-                            <label class="col-lg-4 col-form-label" for="PD_NO"
-                              >商品編號
-                              <span class="text-danger">*</span>
-                            </label>
-                            <div class="col-lg-6">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="PD_NO"
-                                placeholder="Enter a username.."
-                              />
-                            </div>
-                          </div>
-                          <div class="mb-3 row">
-                            <label class="col-lg-4 col-form-label" for="PD_NAME"
-                              >商品名稱
-                              <span class="text-danger">*</span>
-                            </label>
-                            <div class="col-lg-6">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="PD_NAME"
-                                placeholder="Enter a username.."
-                                required=""
-                              />
-                              <div class="invalid-feedback">
-                                Please enter a username.
-                              </div>
-                            </div>
-                          </div>
                           <div class="mb-3 row">
                             <label
                               class="col-lg-4 col-form-label"
-                              for="PD_PRICE"
-                              >商品價錢<span class="text-danger">*</span>
+                              for="validationCustom01"
+                              >會員編號
+                              <span class="text-danger"></span>
                             </label>
                             <div class="col-lg-6">
                               <input
                                 type="text"
                                 class="form-control"
-                                id="PD_PRICE"
-                                required=""
+                                id="validationCustom01"
+                                placeholder="Enter a memberNo.."
                               />
                             </div>
                           </div>
                           <div class="mb-3 row">
                             <label
                               class="col-lg-4 col-form-label"
-                              for="PD_AMOUNT"
-                              >商品庫存
-                              <span class="text-danger">*</span>
+                              for="validationCustom01"
+                              >姓名
+                              <span class="text-danger"></span>
                             </label>
                             <div class="col-lg-6">
                               <input
                                 type="text"
                                 class="form-control"
-                                id="PD_AMOUNT"
+                                id="validationCustom01"
+                                placeholder="Enter a username.."
+                                disabled
                               />
                             </div>
-                            <div class="invalid-feedback">
-                              Please select a one.
+                          </div>
+                          <div class="mb-3 row">
+                            <label
+                              class="col-lg-4 col-form-label"
+                              for="validationCustom02"
+                              >Email(帳號) <span class="text-danger"></span>
+                            </label>
+                            <div class="col-lg-6">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="validationCustom02"
+                                placeholder="Enter valid email.."
+                                disabled
+                              />
                             </div>
                           </div>
                         </div>
@@ -431,101 +415,102 @@
                           <div class="mb-3 row">
                             <label
                               class="col-lg-4 col-form-label"
-                              for="PD_STATUS"
-                              >商品上架狀態
-                              <span class="text-danger">*</span>
+                              for="validationCustom05"
+                              >性別
+                              <span class="text-danger"></span>
                             </label>
                             <div class="col-lg-6">
                               <div class="form-check form-check-inline">
                                 <input
                                   class="form-check-input"
                                   type="radio"
-                                  name="PD_STATUS"
-                                  id="offsell"
-                                  value="0"
+                                  name="gender"
+                                  id="male"
+                                  disabled
                                 />
-                                <label class="form-check-label" for="offsell"
-                                  >下架</label
+                                <label class="form-check-label" for="male"
+                                  >男</label
                                 >
                               </div>
                               <div class="form-check form-check-inline">
                                 <input
                                   class="form-check-input"
                                   type="radio"
-                                  name="PD_STATUS"
-                                  id="onsell"
-                                  value="1"
+                                  name="gender"
+                                  id="female"
+                                  disabled
                                 />
-                                <label class="form-check-label" for="onsell"
-                                  >上架</label
+                                <label class="form-check-label" for="female"
+                                  >女</label
                                 >
-                              </div>
-                              <div class="invalid-feedback">
-                                Please select a one.
                               </div>
                             </div>
                           </div>
                           <div class="mb-3 row">
                             <label
                               class="col-lg-4 col-form-label"
-                              for="PD_UPDATE"
-                              >近期更新時間
-                              <span class="text-danger">*</span>
+                              for="validationCustom08"
+                              >電話
+                              <span class="text-danger"></span>
                             </label>
                             <div class="col-lg-6">
                               <input
-                                type="datetime"
+                                style="font-size: larger"
+                                type="text"
+                                id="staticPhone"
                                 class="form-control"
-                                id="PD_UPDATE"
+                                disabled
                               />
                             </div>
                           </div>
                           <div class="mb-3 row">
-                            <label class="col-lg-4 col-form-label" for="PIC_NO"
-                              >商品圖片
+                            <label
+                              class="col-lg-4 col-form-label"
+                              for="validationCustom09"
+                              >通訊地址 <span class="text-danger"></span>
                             </label>
                             <div class="col-lg-6">
-                              <div class="input-group">
-                                <div class="form-file">
-                                  <input
-                                    type="file"
-                                    class="form-file-input form-control"
-                                  />
-                                </div>
-                              </div>
-                              <div class="input-group">
-                                <div class="form-file">
-                                  <input
-                                    type="file"
-                                    class="form-file-input form-control"
-                                  />
-                                </div>
-                              </div>
-                              <div class="input-group">
-                                <div class="form-file">
-                                  <input
-                                    type="file"
-                                    class="form-file-input form-control"
-                                  />
-                                </div>
-                              </div>
+                              <input
+                                style="font-size: larger"
+                                type="text"
+                                class="form-control"
+                                id="staticAddress"
+                                disabled
+                              />
                             </div>
                           </div>
-                        </div>
-
-                        <div class="mb-3 row">
-                          <label
-                            class="col-lg-4 col-form-label"
-                            for="PD_DESCRIPTION"
-                            >商品資訊
-                            <span class="text-danger">*</span>
-                          </label>
-                          <div class="col-lg-12">
-                            <textarea
-                              class="form-control"
-                              rows="4"
-                              id="PD_DESCRIPTION"
-                            ></textarea>
+                          <div class="mb-3 row">
+                            <label
+                              class="col-lg-4 col-form-label"
+                              for="validationCustom05"
+                              >預約權限狀態
+                              <span class="text-danger">*</span>
+                            </label>
+                            <div class="col-lg-6">
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="reserveAuth"
+                                  id="closed"
+                                />
+                                <label class="form-check-label" for="closed"
+                                  >鎖定</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="reserveAuth"
+                                  id="open"
+                                  checked
+                                />
+                                <label class="form-check-label" for="open"
+                                  >開放</label
+                                >
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -533,8 +518,11 @@
                           <div
                             class="d-grid gap-2 d-md-flex justify-content-md-end ms-auto"
                           >
-                            <button type="submit" class="btn btn-primary fs-5">
-                              確認
+                            <button type="submit" class="btn btn-primary">
+                              查詢
+                            </button>
+                            <button type="submit" class="btn btn-danger">
+                              修改
                             </button>
                           </div>
                         </div>
@@ -547,235 +535,16 @@
             </div>
           </div>
           <!--**********************************
-            商品維護 end
+            商品管理 end
         ***********************************-->
 
-          <!--**********************************
-            商品清單列表 start
-        ***********************************-->
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-header">
-                <h4 class="card-title">商品清單列表</h4>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-responsive-md">
-                    <thead>
-                      <tr>
-                        <th style="width: 50px">
-                          <div
-                            class="form-check custom-checkbox checkbox-success check-lg me-3"
-                          >
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="checkAll"
-                              required=""
-                            />
-                            <label
-                              class="form-check-label"
-                              for="checkAll"
-                            ></label>
-                          </div>
-                        </th>
-                        <th><strong>ROLL NO.</strong></th>
-                        <th><strong>NAME</strong></th>
-                        <th><strong>Email</strong></th>
-                        <th><strong>Date</strong></th>
-                        <th><strong>Status</strong></th>
-                        <th><strong></strong></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div
-                            class="form-check custom-checkbox checkbox-success check-lg me-3"
-                          >
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="customCheckBox2"
-                              required=""
-                            />
-                            <label
-                              class="form-check-label"
-                              for="customCheckBox2"
-                            ></label>
-                          </div>
-                        </td>
-                        <td><strong>542</strong></td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <img
-                              src="static/picture/1.jpg"
-                              class="rounded-lg me-2"
-                              width="24"
-                              alt=""
-                            />
-                            <span class="w-space-no">Dr. Jackson</span>
-                          </div>
-                        </td>
-                        <td>example@example.com</td>
-                        <td>01 August 2020</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <i class="fa fa-circle text-success me-1"></i>
-                            Successful
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <a
-                              href="product_ad.html#PD_NO"
-                              class="btn btn-primary shadow btn-xs sharp me-1"
-                              ><i class="fa fa-plus-circle"></i
-                            ></a>
-                            <a
-                              href="#"
-                              class="btn btn-primary shadow btn-xs sharp me-1"
-                              ><i class="fas fa-pencil-alt"></i
-                            ></a>
-                            <a
-                              href="#"
-                              class="btn btn-danger shadow btn-xs sharp"
-                              ><i class="fa fa-trash"></i
-                            ></a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div
-                            class="form-check custom-checkbox checkbox-success check-lg me-3"
-                          >
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="customCheckBox3"
-                              required=""
-                            />
-                            <label
-                              class="form-check-label"
-                              for="customCheckBox3"
-                            ></label>
-                          </div>
-                        </td>
-                        <td><strong>542</strong></td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <img
-                              src="static/picture/2.jpg"
-                              class="rounded-lg me-2"
-                              width="24"
-                              alt=""
-                            />
-                            <span class="w-space-no">Dr. Jackson</span>
-                          </div>
-                        </td>
-                        <td>example@example.com</td>
-                        <td>01 August 2020</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <i class="fa fa-circle text-danger me-1"></i>
-                            Canceled
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <a
-                              href="product_ad.html#PD_NO"
-                              class="btn btn-primary shadow btn-xs sharp me-1"
-                              ><i class="fa fa-plus-circle"></i
-                            ></a>
-                            <a
-                              href="#"
-                              class="btn btn-primary shadow btn-xs sharp me-1"
-                              ><i class="fas fa-pencil-alt"></i
-                            ></a>
-                            <a
-                              href="#"
-                              class="btn btn-danger shadow btn-xs sharp"
-                              ><i class="fa fa-trash"></i
-                            ></a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div
-                            class="form-check custom-checkbox checkbox-success check-lg me-3"
-                          >
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="customCheckBox4"
-                              required=""
-                            />
-                            <label
-                              class="form-check-label"
-                              for="customCheckBox4"
-                            ></label>
-                          </div>
-                        </td>
-                        <td><strong>542</strong></td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <img
-                              src="static/picture/3.jpg"
-                              class="rounded-lg me-2"
-                              width="24"
-                              alt=""
-                            />
-                            <span class="w-space-no">Dr. Jackson</span>
-                          </div>
-                        </td>
-                        <td>example@example.com</td>
-                        <td>01 August 2020</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <i class="fa fa-circle text-warning me-1"></i>
-                            Pending
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <a
-                              href="product_ad.html#PD_NO"
-                              class="btn btn-primary shadow btn-xs sharp me-1"
-                              ><i class="fa fa-plus-circle"></i
-                            ></a>
-                            <a
-                              href="#"
-                              class="btn btn-primary shadow btn-xs sharp me-1"
-                              ><i class="fas fa-pencil-alt"></i
-                            ></a>
-                            <a
-                              href="#"
-                              class="btn btn-danger shadow btn-xs sharp"
-                              ><i class="fa fa-trash"></i
-                            ></a>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--**********************************
-            商品清單列表 end
-        ***********************************-->
-        </div>
-      </div>
+          
 
-      <!--**********************************
+        <!--**********************************
             Content body end
         ***********************************-->
 
-      <!--**********************************
+        <!--**********************************
             Footer start
         ***********************************-->
       <div id="footer"></div>
