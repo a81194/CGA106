@@ -80,7 +80,7 @@
                                             Dashboard</a>
                                         <a href="#orders" data-bs-toggle="tab"><i class="fa fa-cart-arrow-down"></i>
                                             訂單管理</a>
-                                        <a href="wishlist.html"><i class="fa fa-heart"></i>
+                                        <a href="#wishlist" data-bs-toggle="tab"><i class="fa fa-heart"></i>
                                             我的收藏</a>
                                         <a href="#notify" data-bs-toggle="tab"><i class="fa fa-bell"></i>
                                             我的訊息</a>
@@ -106,7 +106,7 @@
                                             <div class="myaccount-content">
                                                 <h3>Dashboard</h3>
                                                 <div class="welcome">
-                                                    <p>您好, <strong>Alex Aya</strong></p>
+                                                    <p>您好, <strong id="myName">Alex Aya</strong></p>
                                                 </div>
                                                 <p class="mb-0">由你的帳戶管理頁面，你可以輕鬆地檢查和查看你最近的訂單與通知，管理你所預約的訂位與活動，以及編輯你的密碼和帳戶詳細資料。</p>
                                             </div>
@@ -156,6 +156,62 @@
                                                             </tr>
                                                             
 
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+
+                                        <!-- Single Tab Content Start 我的收藏-->
+                                        <div class="tab-pane fade" id="wishlist" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>收藏列表</h3>
+                                                <div class="myaccount-table table-responsive text-center">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="pro-thumbnail">商品圖片</th>
+                                                                <th class="pro-title">商品名稱</th>
+                                                                <th class="pro-price">售價</th>
+                                                                <th class="pro-stock">庫存量</th>
+                                                                <th class="pro-cart">加入購物車</th>
+                                                                <th class="pro-remove">移除收藏</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="static/picture/14.jpg" alt="Product"></a></td>
+                                                                <td class="pro-title"><a href="#">Product dummy title <br> s / green</a></td>
+                                                                <td class="pro-price"><span>$295.00</span></td>
+                                                                <td class="pro-stock"><span><strong>In Stock</strong></span></td>
+                                                                <td class="pro-cart"><a href="cart.html"><i class="fa fa-cart-arrow-down" style="font-size: 1.5rem;"></i></a></td>
+                                                                <td class="pro-remove"><a href="#"><i class="ion-trash-b" style="font-size: 1.5rem;"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="static/picture/24.jpg" alt="Product"></a></td>
+                                                                <td class="pro-title"><a href="#">Product title here <br> red</a></td>
+                                                                <td class="pro-price"><span>$275.00</span></td>
+                                                                <td class="pro-stock"><span><strong>In Stock</strong></span></td>
+                                                                <td class="pro-cart"><a href="cart.html"><i class="fa fa-cart-arrow-down" style="font-size: 1.5rem;"></i></a></td>
+                                                                <td class="pro-remove"><a href="#"><i class="ion-trash-b" style="font-size: 1.5rem;"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="static/picture/34.jpg" alt="Product"></a></td>
+                                                                <td class="pro-title"><a href="#">Product dummy title <br> s</a></td>
+                                                                <td class="pro-price"><span>$295.00</span></td>
+                                                                <td class="pro-stock"><span><strong>In Stock</strong></span></td>
+                                                                <td class="pro-cart"><a href="cart.html"><i class="fa fa-cart-arrow-down" style="font-size: 1.5rem;"></i></a></td>
+                                                                <td class="pro-remove"><a href="#"><i class="ion-trash-b" style="font-size: 1.5rem;"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="static/picture/43.jpg" alt="Product"></a></td>
+                                                                <td class="pro-title"><a href="#">Dummy Title</a></td>
+                                                                <td class="pro-price"><span>$110.00</span></td>
+                                                                <td class="pro-stock"><span><strong>In Stock</strong></span></td>
+                                                                <td class="pro-cart"><a href="cart.html"><i class="fa fa-cart-arrow-down" style="font-size: 1.5rem;"></i></a></td>
+                                                                <td class="pro-remove"><a href="#"><i class="ion-trash-b" style="font-size: 1.5rem;"></i></a></td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
