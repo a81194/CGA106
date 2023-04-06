@@ -42,16 +42,6 @@ public class EventController {
     public Boolean updateWinner(@RequestBody EventDTO eventDTO){
         return eventServiceImpl.updateWinner(eventDTO);
     }
-    @PostMapping("/addSignupNum")
-    @ResponseBody
-    public Boolean updateSignupNum(@RequestBody EventDTO eventDTO){
-        return eventServiceImpl.updateSignupNum(eventDTO);
-    }
-    @PostMapping("/delSignupNum")
-    @ResponseBody
-    public Boolean cancelSignupNum(@RequestBody EventDTO eventDTO){
-        return eventServiceImpl.cancelSignupNum(eventDTO);
-    }
 
     // 報名人數+1。
     // 參數: Integer eventNo，人數到達上限不在加入，加入回傳true，無法加入回傳false

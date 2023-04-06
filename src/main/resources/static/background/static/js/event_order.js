@@ -82,7 +82,6 @@ $(document).ready(e => {
       return $('td:last', this).text() === '2';
     });
 
-
     // 從DataTable中刪除這些行
     $('#ordList').DataTable();
     table.rows(rowsToRemove).remove().draw();
@@ -102,7 +101,6 @@ $(document).ready(e => {
         tr.addClass("shown");
       }
     });
-
   }
 
   function PromiseData2(eventData, eventordData) {
@@ -136,7 +134,6 @@ $(document).ready(e => {
             "signupNum": 0,
             "eventStatus": 2
           }
-
           // 賽事狀態取消
           fetch('/event/setStatus', {
             method: 'POST',
@@ -150,7 +147,6 @@ $(document).ready(e => {
                 throw new Error('Event not saved');
               }
               return response.json();
-
             })
             .catch(error => {
               console.error('Error:', error.message);
