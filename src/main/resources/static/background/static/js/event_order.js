@@ -82,6 +82,7 @@ $(document).ready(e => {
       return $('td:last', this).text() === '2';
     });
 
+
     // 從DataTable中刪除這些行
     $('#ordList').DataTable();
     table.rows(rowsToRemove).remove().draw();
@@ -101,6 +102,7 @@ $(document).ready(e => {
         tr.addClass("shown");
       }
     });
+
   }
 
   function PromiseData2(eventData, eventordData) {
