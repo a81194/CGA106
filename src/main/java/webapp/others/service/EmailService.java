@@ -15,6 +15,7 @@ public interface EmailService {
     void sendPassword(String to, String text) throws MessagingException;
 
     void send(SimpleMailMessage simpleMessage) throws MailException;
+
     void send(SimpleMailMessage... simpleMessages) throws MailException;
-//    void sendSimpleEmail(String to, String text);
+    // void sendSimpleEmail(String to, String text);
 }
